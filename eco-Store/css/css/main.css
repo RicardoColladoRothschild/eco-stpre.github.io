@@ -2,6 +2,12 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16,6 +22,7 @@ nav {
   justify-content: space-between;
   color: #7C6A0A;
   padding: 15px;
+  margin-bottom: 45px;
   /*Uso de nesting*/
 }
 nav p {
@@ -29,6 +36,40 @@ nav .icons {
 nav .icons button {
   background: none;
   border-style: none;
+}
+
+article {
+  width: auto;
+  display: flex;
+  padding-left: 35px;
+  padding-right: 35px;
+  justify-content: space-between;
+  color: #7C6A0A;
+}
+article .impact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+article h1 {
+  font-size: 3.5rem;
+}
+article p {
+  font-size: 1.8rem;
+}
+article button {
+  width: 12vw;
+  background-color: #FA9500;
+  border-style: none;
+  padding: 20px;
+  border-radius: 35px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+article .image-section img {
+  width: 25vw;
+  border-radius: 19px;
 }
 
 footer {

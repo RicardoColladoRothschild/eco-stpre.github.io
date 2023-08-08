@@ -3,9 +3,19 @@ $secondary-color:#FFDAC6;
 $tertiary-color:#BABD8D;
 $primary-text-color:#7C6A0A;
 $font-stack1: 'IBM Plex Sans', sans-serif;
+$paragraph-size:1.8rem;
+$backgroundColor:#FA9500;
+
+
 
 html{
     font-size:62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
 }
 body{
     margin:0;
@@ -22,10 +32,10 @@ nav{
     justify-content:space-between;
     color:$primary-text-color;
     padding:15px;
-
+    margin-bottom:45px;
     /*Uso de nesting*/
     p{
-        font-size:1.8rem;
+        font-size:$paragraph-size;
         padding-left:30px;
     }
     .icons{
@@ -38,10 +48,50 @@ nav{
     }
 }
 
+article{
+    width:auto;
+    display:flex;
+    padding-left:35px;
+    padding-right:35px;
+    justify-content:space-between;
+    color:$primary-text-color;
+    
+    .impact-section{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
 
+
+    h1{
+        font-size:3.5rem;
+
+    }
+    p{
+        font-size:$paragraph-size;
+    }
+
+    button{
+        width:12vw;
+        background-color:$backgroundColor;
+        border-style:none;
+        padding:20px;
+        border-radius:35px;
+        color:white;
+        font-size:1.5rem;
+        font-weight:500;
+
+    }
+    .image-section{
+     img{
+            width:25vw;
+            border-radius: 19px;;
+        }
+    }
+}
 
 footer{
-    $backgroundColor:#FA9500;
+    
     background-color:$backgroundColor;
     width:100%;
     height:250px;
