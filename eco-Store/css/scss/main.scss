@@ -6,7 +6,21 @@ $font-stack1: 'IBM Plex Sans', sans-serif;
 $paragraph-size:1.8rem;
 $backgroundColor:#FA9500;
 
+@mixin flexCenter($direction, $content, $align){
+    display:flex;
+    flex-direction:$direction;
+    justify-content:$content;
+    align-items:$align;
 
+}
+
+@mixin buttonStyle{
+    button{
+        background:none;
+        border-style:none;
+
+    }
+}
 
 html{
     font-size:62.5%;
@@ -28,8 +42,9 @@ nav{
    
     width:auto;
     height:100px;
-    display:flex;
-    justify-content:space-between;
+    //uso del mixin que creamos mas arriba con parametros:
+    @include flexCenter(row,space-between,center);
+
     color:$primary-text-color;
     padding:15px;
     margin-bottom:45px;
@@ -41,24 +56,20 @@ nav{
     .icons{
         display:flex;
         gap:15px;
-        button{
-            background:none;
-            border-style: none;
-        }
+        @include buttonStyle;
     }
 }
 
 article{
     width:auto;
-    display:flex;
+    @include flexCenter(row,space-between,center);
     padding-left:35px;
     padding-right:35px;
-    justify-content:space-between;
+    
     color:$primary-text-color;
     
     .impact-section{
-        display:flex;
-        flex-direction:column;
+        @include flexCenter(column,space-evenly,flex-start);
         gap:15px;
     }
 
@@ -70,11 +81,12 @@ article{
     p{
         font-size:$paragraph-size;
     }
-
+    @include buttonStyle;
     button{
         width:12vw;
+       
         background-color:$backgroundColor;
-        border-style:none;
+       
         padding:20px;
         border-radius:35px;
         color:white;
@@ -111,12 +123,11 @@ section{
         }
 
         .card-section{
-            display:flex;
+           @include flexCenter(row,space-evenly,center);
+            
             width: auto;
             height:auto;
             margin-bottom:35px;
-            justify-content: center;
-            align-items:center;
             column-gap:200px;
             row-gap:80px;
             flex-wrap:wrap;
@@ -124,7 +135,7 @@ section{
         }
         .product-card{
             width:18vw;
-            height:45vh;
+            height:auto;
             background-color:$secondary-color;
             color:$primary-text-color;
             padding:20px;
