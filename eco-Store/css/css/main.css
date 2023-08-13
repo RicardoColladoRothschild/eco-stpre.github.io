@@ -90,14 +90,14 @@ section h2 {
   color: #7C6A0A;
   font-size: 2rem;
 }
-section .healthcare, section .furniture {
+section .healthcare, section .about-us, section .furniture {
   padding-bottom: 60px;
 }
-section .healthcare h2, section .furniture h2 {
+section .healthcare h2, section .about-us h2, section .furniture h2 {
   font-weight: 300;
   padding-bottom: 60px;
 }
-section .healthcare .card-section, section .furniture .card-section {
+section .healthcare .card-section, section .about-us .card-section, section .furniture .card-section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -110,7 +110,7 @@ section .healthcare .card-section, section .furniture .card-section {
   row-gap: 80px;
   flex-wrap: wrap;
 }
-section .healthcare .product-card, section .furniture .product-card {
+section .healthcare .product-card, section .about-us .product-card, section .furniture .product-card {
   width: 18vw;
   height: auto;
   background-color: #FFDAC6;
@@ -118,40 +118,44 @@ section .healthcare .product-card, section .furniture .product-card {
   padding: 20px;
   border-radius: 8px;
 }
-section .healthcare .product-card .icon, section .furniture .product-card .icon {
+section .healthcare .product-card .icon, section .about-us .product-card .icon, section .furniture .product-card .icon {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 12px;
 }
-section .healthcare .product-card .icon svg, section .furniture .product-card .icon svg {
+section .healthcare .product-card .icon svg, section .about-us .product-card .icon svg, section .furniture .product-card .icon svg {
   width: 28px;
   height: 28px;
   color: #7C6A0A;
   stroke-width: 2;
 }
-section .healthcare .product-card .product-image, section .furniture .product-card .product-image {
+section .healthcare .product-card .product-image, section .about-us .product-card .product-image, section .furniture .product-card .product-image {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .healthcare .product-card .product-image img, section .furniture .product-card .product-image img {
+section .healthcare .product-card .product-image img, section .about-us .product-card .product-image img, section .furniture .product-card .product-image img {
   width: 14vw;
   height: 30vh;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 6px;
 }
-section .healthcare .product-card h3, section .furniture .product-card h3 {
+section .healthcare .product-card h3, section .about-us .product-card h3, section .furniture .product-card h3 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 section .furniture .product-card {
   background-color: #BABD8D;
   color: white;
+}
+
+.about-us h2 {
+  font-weight: bold;
 }
 
 footer {

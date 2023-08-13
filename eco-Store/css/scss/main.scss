@@ -189,7 +189,14 @@ section{
     }
 }
    
+.about-us{
+    @extend .healthcare;
 
+        h2{
+            font-weight:bold;
+            
+        }
+}
 footer{
     
     background-color:$backgroundColor;
