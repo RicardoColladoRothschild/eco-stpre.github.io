@@ -190,11 +190,34 @@ section{
 }
    
 .about-us{
-    @extend .healthcare;
-
-        h2{
+    
+    padding-bottom:60px;
+        h2{ 
             font-weight:bold;
+            padding-bottom:60px;    
+        }
+
+        .mission-section{
             
+            @include flexCenter(row,space-evenly,center);
+            .earth{
+                width:35vw;
+                display:flex;
+                gap:40px;
+                
+                color:#E86424;
+                img{
+                    object-fit:contain;
+                }
+                P{
+                    text-align:center;
+                    font-size:$paragraph-size;
+                }
+            }
+
+            .innovation{
+                @extend .earth;
+            }
         }
 }
 footer{
